@@ -17,6 +17,6 @@ const Inapprating = NativeModules.Inapprating
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Inapprating.multiply(a, b);
+export function ratingReview(): Promise<string> {
+  return Inapprating.ratingReview();
 }

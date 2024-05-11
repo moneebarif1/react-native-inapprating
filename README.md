@@ -11,11 +11,18 @@ npm install react-native-inapprating
 ## Usage
 
 ```js
-import { multiply } from 'react-native-inapprating';
+import { ratingReview } from 'react-native-inapprating';
 
 // ...
 
-const result = await multiply(3, 7);
+ratingReview().then((result)=>{
+  if(result === 'true'){
+    // put your flow here
+  }. .catch((error) => {
+    // we have some error could happen while lanuching InAppReview,
+    console.log(error);
+  });
+});
 ```
 
 ## Contributing
